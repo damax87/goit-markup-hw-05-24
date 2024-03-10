@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WebStudio</title>
+    <title>Web Studio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
@@ -46,7 +46,7 @@
 <!-- Hero -->
         <section class="hero overlay">
             <h1 class="hero-title">Effective solutions for <br> your business</h1>
-            <button type="button" class="hero-button button">Request our service</button>
+            <button data-modal-open type="button" class="hero-button">Request our service</button>
         </section>
 <!-- Advantages -->
         <section class="container section no-padding-bottom">
@@ -344,6 +344,15 @@
         </div>
     </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button data-modal-close class="close-button">
+                <svg class="close-icon">
+                    <use href="./images/icons.svg#closeIcon"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
     <script src="./js/modal.js"></script>
 </body>
 </html>
